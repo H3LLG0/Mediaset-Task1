@@ -9,36 +9,50 @@ html(lang= 'ru')
             img(src=require('./images/pattern.svg'), alt="pattern")
             .header__bunner__text 
               <strong>1С: ERP</strong> <span>Внедрение и сопровождение</span>
-        .header__nav__bar 
+        .header__bar 
             img(src=require('./images/logo.svg'), alt="logo")
-            nav 
-              .nav__bar__contacts
-                .contact__phones 
-                  .contact__item#Kostroma 
-                    <strong>Кострома</strong>
-                    .phone__numbers 
-                      .phone__number +7 (4942) 42-20-00
-                      .phone__number#last__number +7 (4942) 42-20-00
-                  .contact__item#Moskva 
-                    <strong>Москва</strong>
-                    .phone__numbers +7 (495) 134-03-70
-              .nav__bar__sm 
-                .nav__bar__icons 
-                  a(href="#") 
-                    img(src=require('./images/icons/ok.svg'), alt="ok")
-                  a(href="#") 
-                    img(src=require('./images/icons/vk.svg'), alt="vk")
-                  a(href="#") 
-                    img(src=require('./images/icons/youtube.svg'), alt="youtube")
-                  a(href="#") 
-                    img(src=require('./images/icons/rutube.svg'), alt="rutube")
-                  a#search(href="#")
-                    img(src=require("./images/icons/search.svg"), alt="search") 
-                .nav__bar__buttons 
-                  button Заказать звонок 
-                  button Войти
-
-              
+            .header__bar__content 
+              .header__bar__content__contacts 
+                .header__bar__content__contacts__phones 
+                  .header__bar__content__contacts__phones__item <span>Кострома</span>
+                    .header__bar__content__contacts__phones__item__numbers 
+                      .header__bar__content__contacts__phones__item__numbers__item +7 (4942) 42-20-00
+                      .header__bar__content__contacts__phones__item__numbers__item#seccond_number +7 (4942) 42-22-00
+                  .header__bar__content__contacts__phones__item#moskva <span>Москва</span>
+                    .header__bar__content__contacts__phones__item__numbers +7 (495) 134-03-70
+                .header__bar__content__contacts__right 
+                  .socials 
+                    a(href="#") 
+                      img(src=require('./images/icons/ok.svg'), alt="ok")
+                    a(href="#") 
+                      img(src=require('./images/icons/vk.svg'), alt="vk")
+                    a(href="#") 
+                      img(src=require('./images/icons/youtube.svg'), alt="youtube")
+                    a(href="#") 
+                      img(src=require('./images/icons/rutube.svg'), alt="rutube")
+                  .search 
+                    a#search(href="#")
+                      img(src=require("./images/icons/search.svg"), alt="search")
+                  .buttons 
+                    button Заказать звонок
+                    button#login Войти
+              .header__bar__content__nav 
+                nav 
+                  ul.nav__menu 
+                    li 
+                      a(href="#") Услуги
+                    li 
+                      a(href="#") 1С ERC
+                    li 
+                      a(href="#") Наши работы
+                    li 
+                      a(href="#") Новости
+                    li 
+                      a(href="#") О компании
+                    li 
+                      a(href="#") Блог
+                    li 
+                      a(href="#") Контакты
     main 
 
     footer 
