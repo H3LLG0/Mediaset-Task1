@@ -7,9 +7,38 @@ html(lang= 'ru')
     header 
         .header__banner 
             img(src=require('./images/pattern.svg'), alt="pattern")
-            .header__bunner__text
-                
+            .header__bunner__text 
+              <strong>1С: ERP</strong> <span>Внедрение и сопровождение</span>
+        .header__nav__bar 
+            img(src=require('./images/logo.svg'), alt="logo")
+            nav 
+              .nav__bar__contacts
+                .contact__phones 
+                  .contact__item#Kostroma 
+                    <strong>Кострома</strong>
+                    .phone__numbers 
+                      .phone__number +7 (4942) 42-20-00
+                      .phone__number#last__number +7 (4942) 42-20-00
+                  .contact__item#Moskva 
+                    <strong>Москва</strong>
+                    .phone__numbers +7 (495) 134-03-70
+              .nav__bar__sm 
+                .nav__bar__icons 
+                  a(href="#") 
+                    img(src=require('./images/icons/ok.svg'), alt="ok")
+                  a(href="#") 
+                    img(src=require('./images/icons/vk.svg'), alt="vk")
+                  a(href="#") 
+                    img(src=require('./images/icons/youtube.svg'), alt="youtube")
+                  a(href="#") 
+                    img(src=require('./images/icons/rutube.svg'), alt="rutube")
+                  a#search(href="#")
+                    img(src=require("./images/icons/search.svg"), alt="search") 
+                .nav__bar__buttons 
+                  button Заказать звонок 
+                  button Войти
 
+              
     main 
 
     footer 

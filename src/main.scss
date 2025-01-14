@@ -1,3 +1,91 @@
-html {
-    font-family: 'Rubic';
-  }
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik&display=swap');
+
+$fontR:"Rubik", serif;
+$fontM:"Montserrat", serif;
+$fw:400;
+$margin0:0;
+$padding0:0;
+$header_text_color:#353433;
+$header_fz:32px;
+$search__margin:32px;
+* {
+    font-family: $fontR;
+    font-weight: $fw;
+    margin: $margin0;
+    padding: $padding0;
+}
+.header__banner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: linear-gradient(to right, #EA762C, #FFCB00);
+}
+.header__bunner__text {
+  color: $header_text_color;
+  font-size: $header_fz;
+}
+.header__bunner__text strong {
+  font-size: 40px;
+}
+.header__bunner__text span {
+  font-family: $fontM;
+  border-bottom: 1px solid $header_text_color;
+}
+.header__nav__bar {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: row;
+}
+.header__nav__bar img {
+  margin-left: 38px;
+}
+.header__nav__bar nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 58px;
+}
+.contact__phones {
+  background-color: #F3F3F3;
+  border-radius: 10px;
+  display: flex;
+  padding: 5px 20px;
+}
+.contact__item {
+  color: $header_text_color;
+  font-size: 16px;
+}
+#Kostroma {
+  padding-right: 20px;
+  border-right: 2px solid #E8E8E8;
+}
+#Moskva {
+  padding-left: 20px;
+}
+.contact__item strong {
+  font-size: 14px;
+  font-weight: 600;
+}
+.phone__numbers {
+  margin: 4px;
+  display: flex;
+}
+#last__number {
+  margin-left: 16px;
+}
+.nav__bar__sm {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.nav__bar__icons {
+  display: flex;
+  align-items: center;
+}
+.nav__bar__icons a {
+  text-decoration: none;
+}
+#search {
+  margin-left: $search__margin;
+}
