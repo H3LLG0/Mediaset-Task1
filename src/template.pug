@@ -6,11 +6,16 @@ html(lang= 'ru')
   body
     header 
         .header__banner 
-            img(src=require('./images/pattern.svg'), alt="pattern")
+            img#mob768__pattern(src=require('./images/patternmob.svg'), alt="pattern")
+            img#main__pattern(src=require('./images/pattern.svg'), alt="pattern")
             .header__bunner__text 
               <strong>1С: ERP</strong> <span>Внедрение и сопровождение</span>
         .header__bar 
             img(src=require('./images/logo.svg'), alt="logo")
+            .header__bar__mobile 
+              img(src=require("./images/icons/serchmob.svg"), alt="search")
+              img#profile(src=require("./images/icons/profile.svg"), alt="profile")
+              img#menu(src=require("./images/icons/menu.svg"), alt="menu")
             .header__bar__content 
               .header__bar__content__contacts 
                 .header__bar__content__contacts__phones 
@@ -54,6 +59,9 @@ html(lang= 'ru')
                     li 
                       a(href="#") Контакты
     main 
+      .back__mobile 
+        img(src=require('./images/icons/arrow.svg'), alt="arrow")
+        span Назад
       h3 Новости
       ul.years 
         li Все
@@ -187,9 +195,41 @@ html(lang= 'ru')
               form 
                 input(type="text" placeholder=('e-mail'))
                 button Подписаться
+          .top__footer__mobile 
+            .top__footer__mobile__content 
+              .top__footer__modile__socials
+                img(src=require('./images/icons/ok.svg'), alt="ok")
+                img#latest(src=require('./images/icons/vk.svg'), alt="vk")
+                img#latest(src=require('./images/icons/youtube.svg'), alt="youtube")
+                img#latest(src=require('./images/icons/rutube.svg'), alt="rutube")
+              .top__footer__modile__modal 
+                img(src=require('./images/icons/gear.svg'), alt="gear") 
+                .mobile__call 
+                  p Проконсультируем, установим, настроим и обучим<br>
+                  button Заказать звонок
+              .top__footer__modile__menu 
+                ul 
+                  li#v 
+                    span Услуги
+                    span V
+                  li#v 
+                    span Наши работы
+                    span V
+                  li#v  
+                    span Компания
+                    span V
+                  li Новости
+                  li Методические рекомендации
+                  li Контакты
+              .top__footer__mobile__sub 
+                img(src=require('./images/icons/sub-icon.svg'), alt="sub")
+                .sub__ttl Подпишитесь на e-mail рассылку, чтобы первыми увидеть новые статьи
+                form.sub__form 
+                  input(type="text" placeholder='e-mail')
+                  button Подписаться 
           .top__footer__down 
-            img(src=require('./images/logo.svg'), alt="logo")
-            img(src=require('./images/franchize.svg'), alt="franch")
+            img#gel(src=require('./images/logo.svg'), alt="logo")
+            img#onec(src=require('./images/franchize.svg'), alt="franch")
             .top__footer__down__info 
               p.email info@gkgelios.ru
               .__location 
@@ -198,8 +238,8 @@ html(lang= 'ru')
                   div +7 (4942) 42-20-00
                   div +7 (4942) 42-22-00
                 .__addr ул. Советская, д. 136А (2 этаж)
-            .top__footer__down__info 
-              .__location 
+            .top__footer__down__info
+              .__location#msk 
                 span Москва
                 .__tel +7 (405)134-03-70
                 .__addr ул. Декабристов, д. 20 к1
