@@ -16,7 +16,6 @@ $maxW: 1844px;
     margin: $margin0;
     padding: $padding0;
 }
-@media screen and (max-width: 1920px) {
 .header__banner {
   display: flex;
   flex-direction: row;
@@ -443,7 +442,6 @@ footer {
 }
 .top__footer__mobile {
   display: none;
-}
 }
 @media screen and (max-width: 768px) {
 
