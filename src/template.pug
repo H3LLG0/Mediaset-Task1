@@ -2,6 +2,7 @@ doctype html
 html(lang= 'ru')
   head
     meta(charset='utf-8')
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
     title= 'Гелиос'
   body
     header 
@@ -45,7 +46,8 @@ html(lang= 'ru')
                 nav 
                   ul.nav__menu 
                     li 
-                      a(href="#") Услуги
+                      a(href="#") Услуги 
+                        img(src=require('./images/arrow.svg'), alt="arrow")
                     li 
                       a(href="#") 1С ERC
                     li 
@@ -53,7 +55,8 @@ html(lang= 'ru')
                     li 
                       a(href="#") Новости
                     li 
-                      a(href="#") О компании
+                      a(href="#") О компании 
+                        img(src=require('./images/arrow.svg'), alt="arrow")
                     li 
                       a(href="#") Блог
                     li 
@@ -157,6 +160,7 @@ html(lang= 'ru')
               .footer__navbar__item 
                 p.__item__title Услуги 
                 ul 
+                  li 1C ERP
                   li 1C:Внедрение и сопровождение
                   li Продажа программного обеспечения
                   li ИТ Обслуживание организаций
@@ -166,7 +170,7 @@ html(lang= 'ru')
                 ul 
                   li Отзывы по внедрениям
                   li Кейсы проектов по рефльной<br>автоматизации
-              .footer__navbar__item
+              .footer__navbar__item#last_item
                 p.__item__title Компания
                 ul 
                   li Окомпании
@@ -207,17 +211,25 @@ html(lang= 'ru')
                 .mobile__call 
                   p Проконсультируем, установим, настроим и обучим<br>
                   button Заказать звонок
+              .modal__mobile__357 
+                .modal__mobile__357__upper 
+                  img(src=require('./images/icons/gear.svg'), alt="gear")
+                  p Проконсультируем, установим, настроим и обучим
+                .modal__mobile__357__lower Заказать звонок
               .top__footer__modile__menu 
                 ul 
                   li#v 
                     span Услуги
-                    span V
+                    span 
+                      img(src=require('./images/arrow.svg'), alt="arrow")
                   li#v 
                     span Наши работы
-                    span V
+                    span  
+                      img(src=require('./images/arrow.svg'), alt="arrow")
                   li#v  
                     span Компания
-                    span V
+                    span 
+                      img(src=require('./images/arrow.svg'), alt="arrow")
                   li Новости
                   li Методические рекомендации
                   li Контакты
@@ -248,5 +260,5 @@ html(lang= 'ru')
           .bottom__footer__container__date © 2015-2023 «Гелиос» Группа компаний
           .bottom__footer__container__conf Политика конфиденциальности
           .bottom__footer__container__dev 
-            span сделано в 
+            p сделано в 
             img(src=require('./images/mediaset.svg'), alt="logo")
