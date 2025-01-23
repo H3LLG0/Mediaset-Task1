@@ -16,7 +16,16 @@ html(lang= 'ru')
             .header__bar__mobile 
               img(src=require("./images/icons/serchmob.svg"), alt="search")
               img#profile(src=require("./images/icons/profile.svg"), alt="profile")
-              img#menu(src=require("./images/icons/menu.svg"), alt="menu")
+              .burger 
+                img#menu(src=require("./images/icons/menu.svg"), alt="menu")
+                ul.burger__menu 
+                  li Услуги
+                  li 1С ERP 
+                  li Наши работы
+                  li Новости 
+                  li О компании
+                  li Блог 
+                  li Контакты
             .header__bar__content 
               .header__bar__content__contacts 
                 .header__bar__content__contacts__phones 
@@ -45,18 +54,30 @@ html(lang= 'ru')
               .header__bar__content__nav 
                 nav 
                   ul.nav__menu 
-                    li 
-                      a(href="#") Услуги 
+                    li.dropdown 
+                      a.dropdown__link(href="#") Услуги 
                         img(src=require('./images/arrow.svg'), alt="arrow")
+                      ul.dropdown__content 
+                        li 1C ERP
+                        li 1C:Внедрение и сопровождение
+                        li Продажа программного обеспечения
+                        li ИТ Обслуживание организаций
+                        li Учебный центр
                     li 
                       a(href="#") 1С ERC
                     li 
                       a(href="#") Наши работы
                     li 
                       a(href="#") Новости
-                    li 
-                      a(href="#") О компании 
+                    li.dropdown 
+                      a.dropdown__link(href="#") О компании 
                         img(src=require('./images/arrow.svg'), alt="arrow")
+                      ul.dropdown__content 
+                        li Окомпании
+                        li Награды
+                        li Карьера в ГЕЛИОС
+                        li Система качества
+                        li Политака конфиденциальности
                     li 
                       a(href="#") Блог
                     li 
