@@ -600,11 +600,15 @@ footer {
     font-size: 16px;
   }
   footer {
-    margin-top: 100px;
-    border-top: 5px solid #eaeaea;
+    margin-top: 80px;
+    border: none;
   }
   .top__footer {
     padding: 0 20px;
+    &__container {
+      padding-top: 20px;
+      border-top: 5px solid #eaeaea;
+    }
   }
   .top__footer__up {
     display: none;
